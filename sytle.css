@@ -1,0 +1,66 @@
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+header{
+   background-image:url(assets/hero.jpg) ;
+   height: 800px;
+   background-size: cover;
+   background-position: center;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 25px;
+    align-items:flex-end;
+}
+
+header a{
+    text-decoration: none;
+    color: #000;
+}
+
+section.about{
+    display: flex;
+    width: 100%;
+    justify-content:start;
+}
+section.about div{
+    
+   
+
+}
+
+div.guitars{
+    background-color:#2C9BFF ;
+    width: 50%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+div.guitars img{
+    padding: 65px;
+    width: 100%;
+}
+div.quote{
+background-color: #F9DBD7;
+width: 50%;
+display: block;
+padding: 65px;
+}
+
+div.quote h3,p{
+    color: #2C9BFF;
+}
+
+div.quote h3{
+    font-size: 32px;
+}
+
+div.quote p{
+    font-size: 18px;
+}
