@@ -1,7 +1,6 @@
 body{
     font-size: 16px;
     line-height: 1.5;
-   
 }
 
 header{
@@ -41,6 +40,7 @@ footer img{
     display: flex;
     
 }
+
 .guitars{
     align-items: center;
     background-color: #2c9bff;
@@ -48,12 +48,13 @@ footer img{
     justify-content: center;
     width: 50%;
 }
+
 .guitars img{
     box-sizing:border-box;
-padding: 65px;
-
-max-width: 100%;
+    padding: 65px;
+    max-width: 100%;
 }
+
 .quote{
     background-color: #f9dbd7;
     color: #2c9bff;
@@ -93,18 +94,31 @@ max-width: 100%;
     padding: 0 30px;
     box-sizing: border-box;
 }
+
 .store h3{
     font-size: 40px;
     line-height: 1;
     text-transform: uppercase;
     margin-bottom: 30px;
 }
+
 .filters{
     display: block;
    margin: 0;
 
 }
+.filters a{
+    text-decoration: none;
+    color: #000;
+}
 
+.show-filters {
+    display: none;
+    transition: all 0.3s;
+    font-size: 20px;
+    color: #999;
+
+}
 ul{
     padding: 0;
 }
@@ -116,15 +130,20 @@ li{
 ul li{
     list-style: none;
     display: inline;
+    text-decoration: none;
 }
 
-.seleted{
+a.selected{
     border-bottom: 3px solid #2C9BFF;
     text-decoration: none;
+    padding-bottom:2px;
 }
 .show-filters {
     display: none;
     transition: all 0.3s;
+    font-size: 20px;
+    color: #999;
+
 }
 .product{
     display: block;
@@ -159,8 +178,6 @@ ul li{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    
-    
 }
 
 .images img{
@@ -179,3 +196,41 @@ ul li{
     opacity: 1;
 }
 
+@media (max-width:640px){
+    .filter-list{
+        display: none;
+    }
+    .show-filters{
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:900px){
+    .product{
+        width: 50%;
+    }
+}
+
+@media (max-width:640px){
+    .guitars, .quote{
+        width: 100%;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .product{
+        width: 100%;
+    }
+    .filter-list li{
+        display: block;
+        margin-bottom: 5px;
+    }
+        
+}
+
+@media (min-width:680px){
+    .filter-list{
+        display: block !important;
+    }
+}
